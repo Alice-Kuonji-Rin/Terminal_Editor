@@ -1,0 +1,24 @@
+# 编译文件和构建输出
+build/
+*.o
+*.a
+*.so
+*.exe
+*.out
+
+# 临时文件
+*~
+*.tmp
+*.swp
+
+# IDE文件
+.vscode/
+.idea/
+*.code-workspace
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
