@@ -7,6 +7,7 @@ SOURCES = \
     core/TextBuffer.cpp \
     core/TerminalController.cpp \
     editors/SimpleTextEditor.cpp \
+    features/CommandShell.cpp\
     main.cpp
 
 OBJECTS = $(SOURCES:%.cpp=build/%.o)

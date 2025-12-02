@@ -2,8 +2,8 @@
 #pragma once
 #include <vector>
 #include <string>
-
 #include <fstream>
+
 struct EditorRow	//简单定义EditorRow，方便未来扩展如：增加高亮属性
 {
 	std::string chars;
@@ -29,10 +29,11 @@ public:
 	bool isDirty() const { return dirty;}
 	void setDirty(bool d) { dirty = d;}
 
-
-	//保存文件
 	void saveToFile();
-	void setFilename(const std::string& name) { filename = name;}
+	void setFilename(const std::string& name) { filename = name; }
+
+
+
 
 private:
 	std::vector<EditorRow> content;

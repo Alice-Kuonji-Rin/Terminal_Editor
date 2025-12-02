@@ -71,9 +71,11 @@ int TextBuffer::getLineLength(int row) const
     return static_cast<int>(content[row].chars.length());
 }
 
+
+
 void TextBuffer::saveToFile()
 {
-    if(filename.empty()) return;   //没有文件名则不保存
+    if(filename.empty()) return;
 
     std::ofstream file(filename);
     if(file.is_open())
@@ -83,7 +85,7 @@ void TextBuffer::saveToFile()
             file << row.chars << "\n";
         }
         file.close();
-        dirty = true;   //触发刷新以更新状态栏
+        dirty = true;
     }
 }
 
@@ -92,3 +94,24 @@ std::string TextBuffer::getFilename() const
 {
     return filename;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
